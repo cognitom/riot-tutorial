@@ -1,24 +1,13 @@
 <app-menu>
   <style scoped>
     :scope { display: block }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    li { display: inline-block }
-    a {
-      color: inherit;
-      display: block;
-      padding: 1.2em;
-      text-decoration: none;
-    }
-    a:hover { background: #eee }
+    
+    /* [B]コンポーネントのスタイルを定義 */
   </style>
   
   <ul>
     <li each={ opts.items }>
-      <a href={ url }>{ title }</a>
+      <!-- [A]title変数と、url変数でテキストリンク -->
     </li>
   </ul>
 </app-menu>
